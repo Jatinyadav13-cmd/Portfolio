@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Jatin | Data Scientist & AI/ML Engineer</title>
+    <meta name="description"
+        content="Jatin — Data Scientist & AI/ML Engineer specializing in Computer Vision, Machine Learning, and AI systems." />
+
+    <style>
+        :root {
+            --bg: #04050a;
+            --card: #0b0d13;
+            --muted: #9aa3b2;
+            --neon-cyan: #00f0ff;
+            --neon-pink: #ff4dff
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+            color: #e6eef8;
+            background:
+                radial-gradient(ellipse at 10% 10%, rgba(0, 240, 255, 0.03), transparent 25%),
+                radial-gradient(ellipse at 90% 90%, rgba(255, 77, 255, 0.03), transparent 18%),
+                var(--bg);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 24px
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 14px;
+            padding: 20px
+        }
+
+        header {
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 48px);
+            max-width: 1100px;
+            z-index: 50
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 16px;
+            border-radius: 14px;
+            background: rgba(10, 12, 20, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.08)
+        }
+
+        .brand {
+            display: flex;
+            gap: 10px;
+            font-weight: 800;
+            align-items: center
+        }
+
+        .logo {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
+            color: #05060a
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 14px
+        }
+
+        nav a {
+            padding: 8px 10px;
+            border-radius: 8px;
+            font-size: 14px
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.06)
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: grid;
+            place-items: center;
+            padding-top: 120px
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 24px
+        }
+
+        @media(max-width:900px) {
+            .hero-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        h1 {
+            font-size: 40px
+        }
+
+        .gradient {
+            background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
+            -webkit-background-clip: text;
+            color: transparent
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .btns {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            padding: 10px 16px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            font-weight: 700
+        }
+
+        .btn.primary {
+            background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
+            color: #04050a
+        }
+
+        section {
+            margin: 28px 0
+        }
+
+        .title {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #dff
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px
+        }
+
+        @media(max-width:900px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .chips {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 8px
+        }
+
+        .chip {
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 13px
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: var(--muted)
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="brand">
+                <div class="logo">J</div>
+                <div>Jatin</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+
+            <div class="card">
+                <h1>Hi, I'm <span class="gradient">Jatin</span></h1>
+                <p class="muted" style="margin-top:8px">
+                    Data Scientist & AI/ML Engineer focused on Computer Vision and intelligent systems.
+                </p>
+                <p class="muted" style="margin-top:8px">
+                    📍 Rewari, Haryana · ✉️ jatin200820033@gmail.com
+                </p>
+
+                <div class="btns">
+                    <a class="btn primary" target="_blank"
+                        href="https://drive.google.com/file/d/YOUR_RESUME_LINK/view">Download Resume</a>
+                    <a class="btn" target="_blank" href="https://github.com/Jatinyadav13-cmd">GitHub</a>
+                    <a class="btn" target="_blank" href="https://www.linkedin.com/in/jatin-yadav-334700277">LinkedIn</a>
+                    <a class="btn" target="_blank" href="https://leetcode.com/u/jatinyadav_13/">LeetCode</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title">Quick Summary</h3>
+                <p class="muted">• AI, ML & Data Science Engineer</p>
+                <p class="muted">• Face Recognition & HCI Systems</p>
+                <p class="muted">• Hackathons & Internships</p>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="container">
+
+        <section id="about">
+            <div class="title">About</div>
+            <div class="card">
+                <p class="muted">
+                    B. Tech CSE (AI/ML) student with hands-on experience in web development, data analysis, and
+                    machine learning. Built full-stack applications, ML models, and analytics dashboards.
+                    I build real-world AI systems using Machine Learning and Computer Vision.
+                    My projects include face recognition-based attendance systems,
+                    eye-controlled interfaces, and AI-driven mental health assessment tools.
+                </p>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="title">Education</div>
+            <div class="card">
+
+                <b>B.Tech – Computer Science Engineering (AI & ML)</b><br />
+                <span class="muted">Shri Vishwakarma Skill University</span><br />
+                <span class="muted">CGPA: 8.0 / 10 (Till 6th Semester)</span>
+
+                <br /><br />
+
+                <b>Kendriya Vidyalaya (Class XII – CBSE)</b><br />
+                <span class="muted">82%</span>
+
+                <br /><br />
+
+                <b>Kendriya Vidyalaya (Class X – CBSE)</b><br />
+                <span class="muted">80%</span>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="title">Major Projects</div>
+            <div class="grid">
+
+                <div class="card">
+                    <b>Attendance Management System (Face Recognition)</b>
+                    <p class="muted">
+                        Automated attendance system using real-time face recognition with a web dashboard.
+                    </p>
+                    <div class="chips">
+                        <span class="chip">Express.js</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">Flask</span>
+                        <span class="chip">OpenCV</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                    </div>
+                    <br />
+                    <a class="chip" target="_blank"
+                        href="https://github.com/Jatinyadav13-cmd/Attendance-management-system-using-face-recognition-.git">
+                        GitHub Repository →
+                    </a>
+                </div>
+
+                <div class="card">
+                    <b>EyeDive – Eye Controlled Interface</b>
+                    <p class="muted">
+                        Hands-free computer interaction using eye tracking and facial landmarks.
+                    </p>
+                    <div class="chips">
+                        <span class="chip">Computer Vision</span>
+                        <span class="chip">MediaPipe</span>
+                        <span class="chip">PyAutoGUI</span>
+                        <span class="chip">Python</span>
+                    </div>
+                    <br />
+                    <a class="chip" target="_blank" href="https://github.com/Jatinyadav13-cmd/eyedive-pro.git">
+                        GitHub Repository →
+                    </a>
+                </div>
+
+                <div class="card">
+                    <b>Mental Health Detector</b>
+                    <p class="muted">
+                        AI-based mental health assessment using psychometric analysis and ML models.
+                    </p>
+                    <div class="chips">
+                        <span class="chip">Machine Learning</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">Pandas</span>
+                        <span class="chip">Scikit-learn</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="title">Other Portfolio Projects</div>
+            <div class="grid">
+
+                <div class="card">
+                    <b>Smart Traffic System</b>
+                    <p class="muted">Vehicle density-based dynamic traffic signal control.</p>
+                </div>
+
+                <div class="card">
+                    <b>Fire Detection System</b>
+                    <p class="muted">Early fire detection using image processing.</p>
+                </div>
+
+                <div class="card">
+                    <b>Plant Pest Detection</b>
+                    <p class="muted">CNN-based agricultural pest classification system.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="title">Skills</div>
+            <div class="card">
+                <p class="muted">
+                    <b>AI & ML:</b> Machine Learning, Deep Learning, CNNs<br /><br />
+                    <b>Computer Vision:</b> OpenCV, MediaPipe, Face Recognition<br /><br />
+                    <b>Programming:</b> Python, JavaScript<br /><br />
+                    <b>Web:</b> HTML, CSS, Flask, Express.js
+                </p>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <div class="title">Certificates & Internships</div>
+            <div class="card">
+                <div class="chips">
+
+                    <a class="chip" target="_blank"
+                        href="https://drive.google.com/file/d/10C-DNDQDILnDlW5AYTK7lSXodOxYF9JE/view?usp=drive_link">
+                        AICTE Internship
+                    </a>
+
+                    <a class="chip" target="_blank"
+                        href="https://drive.google.com/file/d/1qn_EWN-JSbWOYRFoKR1G459WPEGuY2_e/view?usp=drive_link">
+                        Unsupervised ML Internship
+                    </a>
+
+                    <a class="chip" target="_blank"
+                        href="https://drive.google.com/file/d/1pz-wYIBqbx52rqiUkrZsn5nMBKtQSDl_/view?usp=drive_link">
+                        Computer Vision Bootcamp
+                    </a>
+
+                    <a class="chip" target="_blank"
+                        href="https://drive.google.com/file/d/1cD8ew2FKq2wcQn9-GaquC8KXKwmsdJ7A/view?usp=drive_link">
+                        Deep Learning – Simplilearn
+                    </a>
+
+                    <a class="chip" target="_blank"
+                        href="https://drive.google.com/file/d/1lkizZcsXPKtKFrVR6NRk3l9PMQfUAPOi/view?usp=drive_link">
+                        ISRO Hackathon
+                    </a>
+
+                    <a class="chip" target="_blank"
+                        href="https://drive.google.com/file/d/1cb4yIXTpmoyyw3MUoXqiOwuvfpJJspOl/view?usp=drive_link">
+                        Innovation Lab Hackathon
+                    </a>
+
+                    <a class="chip" target="_blank"
+                        href="https://drive.google.com/file/d/14b2MSaBUf-v1MUe3TD_dy3GQRSPNLUJv/view?usp=drive_link">
+                        Network Bulls Technical Session
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © Jatin — Data Scientist & AI/ML Engineer
+    </footer>
+
+</body>
+
+</html>
